@@ -1,6 +1,6 @@
 # Dealing with data from APIs in ReactJS
 
-Fetch API Interface with catching error. Used .then() and .catch()
+Fetch API Interface with catching error. Used .then() and .catch() -> master branch
 
 
 
