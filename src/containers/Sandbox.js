@@ -5,6 +5,8 @@ import Users from "../components/Users/Users";
 import Posts from "../components/Posts/Posts";
 import Form from "./Form";
 
+import classes from "./Sandbox.css";
+
 class Sandbox extends Component {
 	state = {}
 	
@@ -37,7 +39,7 @@ class Sandbox extends Component {
 
 	render() {
 		return(
-			<div>
+			<div className={classes.Sandbox}>
 				<button onClick={this.clickHandlerText}>Get Text</button>
 				<button onClick={this.clickHandlerUsers}>Get JSON</button>
 				<button onClick={this.clickHandlerPosts}>Get API DATA</button>

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import classes from "./Form.css"
+
 class Form extends Component {
 	addPost = (e) => {
 		e.preventDefault();
@@ -23,7 +25,7 @@ class Form extends Component {
 	render() {
 		return(
 			<div>
-				<form onSubmit={this.addPost}>
+				<form className={classes.Form} onSubmit={this.addPost}>
 					<input type="text" placeholder="Title" ref="title" />
 					<textarea type="text" placeholder="Body" ref="body" />
 					<button type="submit">Add Post</button>
