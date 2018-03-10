@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Text from "../components/Text";
 import Users from "../components/Users/Users";
 import Posts from "../components/Posts/Posts";
+import Form from "./Form";
 
 class Sandbox extends Component {
 	state = {}
@@ -44,6 +45,8 @@ class Sandbox extends Component {
 				{ (this.state.text) ? <Text textContent={this.state.text} /> : null }
 				{ (this.state.usersArray) ? <Users usersContent={this.state.usersArray} /> : null }
 				{ (this.state.postsArray) ? <Posts postsContent={this.state.postsArray} /> : null }
+
+				<Form />
 			</div>
 		);
 	}
